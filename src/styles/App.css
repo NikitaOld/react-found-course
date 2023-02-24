@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-family: "Roboto Light", serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: #E5E5E5;
+}
+
+input{
+    font-family: inherit; /* 1 */
+    font-size: inherit; /* 1 */
+    line-height: inherit; /* 1 */
+    margin: 0;
+    padding: 5px 5px;
+}
+
+li{
+    list-style-type: none;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+h1{
+    margin: 5px 0;
+}
+
+p{
+    margin: 5px 0;
+}
+
+/*=====================================*/
+
+.container{
+    margin: 10px 10px;
+}
+
+.post-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: black 1px solid;
+    padding: 5px 15px;
+    margin: 15px 150px;
+}
+
+.post-item h1{
+    font-weight: bold;
+}
+
+.delete-btn{
+    height: 30px;
+    width: 100px;
+    margin-left: 50px;
+    border: black solid 1px;
+}
+
+.addPostForm{
+    display: flex;
+}
+
+.addPostForm input{
+    margin: 0 5px;
+    border: black 1px solid;
+}
+
+.myModalContent{
+    background: black;
+}
+
+.myButton{
+    background: red;
+}
