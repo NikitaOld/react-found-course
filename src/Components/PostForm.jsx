@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import MyInput from "./UI/input/MyInput";
 import MyButton from "./UI/button/MyButton";
 
+
 const PostForm = (props) => {
     const [post, setPost] = useState({title: '', body: ''});
 
