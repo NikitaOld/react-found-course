@@ -3,8 +3,10 @@ import s from './MyModal.module.css'
 const MyModal = ({children, visible, setVisible}) => {
 
     return (
-        <div className={visible ? [s.myModal, s.active].join(' ') : s.myModal}>
-            {children}
+        <div className={visible ? [s.myModal, s.active].join(' ') : s.myModal} onClick={() => setVisible(false)}>
+            <div className={s.myModalContent} onClick={(e) => e.stopPropagation()}>
+                {children}
+            </div>
         </div>
     );
 };

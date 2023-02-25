@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import MyInput from "./UI/input/MyInput";
 import MyButton from "./UI/button/MyButton";
-
+import s from './PostForm.module.css'
 
 const PostForm = (props) => {
     const [post, setPost] = useState({title: '', body: ''});
@@ -16,8 +16,8 @@ const PostForm = (props) => {
     }
 
     return (
-        <div className='PostForm'>
-            <form className='addPostForm' action="">
+        <div className={s.PostForm}>
+            <form className={s.addPostForm} action="">
                 <MyInput
                     type="text"
                     placeholder='Заголовок'
